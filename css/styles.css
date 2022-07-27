@@ -6,6 +6,32 @@
   --second-btn-color: #2196f3;
   --accent-color: #2196f3;
 }
+/*Removes default browser settings.*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -16,7 +42,7 @@ body {
 .link {
   text-decoration: none;
 }
-
+/*For invisible titles*/
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -29,9 +55,23 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
-.address {
+.footer-address {
+  font-style: normal;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid red;
 }
 /* --------------HEADER ------------*/
+.header {
+  background-color: white;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .header-link-log {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -72,6 +112,9 @@ body {
 /* --------------SLOGAN ------------*/
 .slogan {
   background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 210px;
+  /*padding: 200px 455px 210px 455px;*/
 }
 .slogan-text {
   font-weight: 900;
@@ -81,6 +124,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  max-width: 626px;
+  height: 120px;
 }
 .slogan-btn {
   background: var(--second-btn-color);
@@ -89,14 +134,26 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--main-btn-color);
+
+  display: block;
+  margin: 0 auto;
+  width: 216px;
+  height: 50px;
+  margin-top: 30px;
 }
 .slogan-btn:hover {
   /*background: #b808fa;*/
   opacity: 0.9;
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 /* --------------FEATURES ------------*/
-
+.features {
+  padding-top: 94px;
+  padding-bottom: 118px;
+}
+.features-item {
+  width: 270px;
+}
 .features-title {
   font-weight: 700;
   font-size: 14px;
@@ -111,7 +168,14 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+  /*width: 270px;*/
+  margin-top: 10px;
 }
+/* --------------PROMO ------------*/
+.promo {
+  padding-bottom: 94px;
+}
+
 .promo-title {
   font-weight: 700;
   font-size: 36px;
@@ -119,8 +183,14 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-bottom: 50px;
 }
 /* --------------INFO ------------*/
+.info {
+  background: #f5f4fa;
+  padding: 94px 0;
+}
+
 .info-title {
   font-weight: 700;
   font-size: 36px;
@@ -128,13 +198,24 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-bottom: 50px;
+}
+.info-item {
+  text-align: center;
+  width: 270px;
+  background: #ffffff;
+  padding-bottom: 30px;
 }
 .info-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  /*text-align: center;*/
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
+  /*width: 270px;*/
 }
 
 .info-profession {
@@ -148,6 +229,7 @@ body {
 
 .footer {
   background: #2f303a;
+  padding: 60px 0px;
 }
 .footer-log {
   font-family: "Raleway", sans-serif;
@@ -161,7 +243,9 @@ body {
 .footer-log span {
   color: #2196f3;
 }
-
+.footer-address {
+  margin-top: 20px;
+}
 .footer-link-address {
   /*font-style: normal;*/
   font-weight: 400;
@@ -177,6 +261,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
 }
 
 .footer-link-address:hover,
@@ -192,7 +277,9 @@ body {
 /* --------------PAGE-PORTFOLIO ------------*/
 
 /* --------------FILTER ------------*/
-
+.filter {
+  padding: 94px 0px;
+}
 .filter-btn {
   background: #f5f4fa;
   font-weight: 500;
@@ -200,7 +287,7 @@ body {
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 .filter-btn:hover {
   background: var(--second-btn-color);
@@ -208,12 +295,23 @@ body {
 }
 
 /* --------------PRODUCT ------------*/
+.product-list {
+  margin-top: 56px;
+}
+.product-item {
+  padding-bottom: 20px;
+  outline: 2px solid red;
+}
 .product-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-text-color);
+  width: 322px;
+  margin-top: 20px;
+  margin-bottom: 9px;
+  margin-left: 24px;
 }
 .product-specialization {
   font-weight: 400;
@@ -221,4 +319,6 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+  width: 322px;
+  margin-left: 24px;
 }
