@@ -1,0 +1,224 @@
+/*Definition of variables*/
+:root {
+  --main-text-color: #212121;
+  --second-text-color: #757575;
+  --main-btn-color: #ffffff;
+  --second-btn-color: #2196f3;
+  --accent-color: #2196f3;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.address {
+}
+/* --------------HEADER ------------*/
+.header-link-log {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+.header-link-log span {
+  color: #2196f3;
+}
+/*.header-link-log:hover,
+.header-link-log:focus {
+  background-color: #f8f5f5;
+}*/
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+.header-link-communication {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+}
+.header-link-communication:hover,
+.header-link-communication:focus {
+  color: var(--accent-color);
+}
+/* --------------SLOGAN ------------*/
+.slogan {
+  background-color: #2f303a;
+}
+.slogan-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.slogan-btn {
+  background: var(--second-btn-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--main-btn-color);
+}
+.slogan-btn:hover {
+  /*background: #b808fa;*/
+  opacity: 0.9;
+  cursor: pointer;
+}
+/* --------------FEATURES ------------*/
+
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+.features-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+.promo-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.7;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+/* --------------INFO ------------*/
+.info-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.7;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+.info-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.info-profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+/* --------------FOUTER ------------*/
+
+.footer {
+  background: #2f303a;
+}
+.footer-log {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-log span {
+  color: #2196f3;
+}
+
+.footer-link-address {
+  /*font-style: normal;*/
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-link {
+  /*font-style: normal;*/
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link-address:hover,
+.footer-link-address:focus {
+  color: var(--accent-color);
+  /*background-color: #6e6b6b;*/
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
+  /*background-color: #6e6b6b;*/
+}
+/* --------------PAGE-PORTFOLIO ------------*/
+
+/* --------------FILTER ------------*/
+
+.filter-btn {
+  background: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  cursor: pointer;
+}
+.filter-btn:hover {
+  background: var(--second-btn-color);
+  color: #ffffff;
+}
+
+/* --------------PRODUCT ------------*/
+.product-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-text-color);
+}
+.product-specialization {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
