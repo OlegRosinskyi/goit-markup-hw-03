@@ -353,11 +353,16 @@ margin-right: auto;
   display: flex;
   flex-wrap: wrap;
   margin-top: 56px;
+  gap: 30px;
+  
 }
 
 .product-item {
+  width: calc((100%-70px)/3);
   padding-bottom: 20px;
-  outline: 2px solid red;
+  /*outline: 2px solid red;*/
+  /*border: 1px solid #EEEEEE;*/
+  
 }
 .product-name {
   font-weight: 700;
@@ -365,7 +370,7 @@ margin-right: auto;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-text-color);
-  width: 322px;
+  /*width: 322px;*/
   margin-top: 20px;
   margin-bottom: 9px;
   margin-left: 24px;
@@ -376,6 +381,6 @@ margin-right: auto;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-  width: 322px;
+  /*width: 322px;*/
   margin-left: 24px;
 }
