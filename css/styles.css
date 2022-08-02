@@ -283,6 +283,7 @@ body {
   padding: 60px 0px;
 }
 .footer-log {
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -361,14 +362,13 @@ body {
 .product-list {
   display: flex;
   flex-wrap: wrap;
-
   gap: 30px;
 }
 
 .product-item {
   /*width: calc((100%-60px) / 3);*/
   width: 370px;
-  padding-bottom: 20px;
+  /*padding-bottom: 20px;*/
   /*outline: 2px solid red;*/
   /*border: 1px solid #EEEEEE;*/
 }
@@ -376,7 +376,7 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
-  padding-right: auto;
+  padding-right: 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -394,7 +394,7 @@ body {
   color: var(--main-text-color);
   /*width: 322px;*/
 
-  margin-bottom: 9px;
+  margin-bottom: 4px;
 }
 .product-specialization {
   font-weight: 400;
